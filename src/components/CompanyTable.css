@@ -1,0 +1,87 @@
+/* src/components/CompanyTable.css */
+.table-container {
+  flex: 1;
+  overflow: auto;
+  background: white;
+}
+
+.companies-table {
+  width: 100%;
+  min-height: 400px;
+  border-collapse: collapse;
+}
+
+.companies-table th {
+  background: linear-gradient(135deg, #2D3748 0%, #4A5568 100%);
+  color: white;
+  padding: 1.25rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: sticky;
+  top: 0;
+}
+
+.companies-table th:hover {
+  background: linear-gradient(135deg, #4A5568 0%, #2D3748 100%);
+}
+
+.companies-table td {
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #2D3748;
+  font-weight: 500;
+}
+
+.companies-table tr:hover td {
+  background: #f7fafc;
+}
+
+.company-name-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.company-name-link {
+  color: #2C3E50;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.company-name-link:hover {
+  color: #667eea;
+  text-decoration: underline;
+}
+
+.website-hint {
+  font-size: 0.75rem;
+  color: #718096;
+  font-style: italic;
+}
+
+.size-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.size-badge.small {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.size-badge.medium {
+  background: #fef3c7;
+  color: #744210;
+}
+
+.size-badge.large {
+  background: #fed7d7;
+  color: #742a2a;
+}
